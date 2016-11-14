@@ -1,0 +1,26 @@
+package es.salesianos.edu.DDI;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class ServletIni extends HttpServlet {
+
+		@Override
+		protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+			String pais = req.getParameter("user");
+			String lengua1 = req.getParameter("edad");
+			String lengua2 = req.getParameter("curso");
+		
+			System.out.println(Paises);
+			
+		}
+
+
+		private void redirect(HttpServletResponse resp) throws IOException {
+			resp.sendRedirect("fin.jsp");
+		}
+}

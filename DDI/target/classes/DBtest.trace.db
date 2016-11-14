@@ -1,0 +1,52 @@
+2016-11-10 10:56:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" no encontrada
+Table "ALUMNOS" not found; SQL statement:
+REPLACE INTO Alumnos (first) VALUES ('null') [42102-192]
+2016-11-10 10:57:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" no encontrada
+Table "ALUMNOS" not found; SQL statement:
+REPLACE INTO Alumnos (first) VALUES ('null') [42102-192]
+2016-11-10 10:58:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" no encontrada
+Table "ALUMNOS" not found; SQL statement:
+REPLACE INTO Alumnos (first) VALUES ('null') [42102-192]
+2016-11-10 10:58:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" no encontrada
+Table "ALUMNOS" not found; SQL statement:
+REPLACE INTO Alumnos (first) VALUES ('null') [42102-192]
+2016-11-10 11:00:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" no encontrada
+Table "ALUMNOS" not found; SQL statement:
+REPLACE INTO Alumnos (first) VALUES ('null') [42102-192]
+2016-11-10 11:00:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" no encontrada
+Table "ALUMNOS" not found; SQL statement:
+REPLACE INTO Alumnos (first) VALUES ('null') [42102-192]
+2016-11-10 11:01:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" no encontrada
+Table "ALUMNOS" not found; SQL statement:
+REPLACE INTO Alumnos (first) VALUES ('null') [42102-192]
+2016-11-10 11:03:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" no encontrada
+Table "ALUMNOS" not found; SQL statement:
+REPLACE INTO Alumnos (first) VALUES ('null') [42102-192]
+2016-11-10 11:05:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" no encontrada
+Table "ALUMNOS" not found; SQL statement:
+REPLACE INTO Alumnos (first) VALUES ('Espa?') [42102-192]
+2016-11-10 11:06:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" no encontrada
+Table "ALUMNOS" not found; SQL statement:
+REPLACE INTO Alumnos (first) VALUES ('Italia') [42102-192]
+2016-11-10 11:29:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'null[*]')"
+Syntax error in SQL statement "REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'null[*]')"; SQL statement:
+REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'null') [42000-192]
+2016-11-10 11:32:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "REPLACE INTO Alumnos (first, lengua) VALUES ('Ingles, 'null[*]')"
+Syntax error in SQL statement "REPLACE INTO Alumnos (first, lengua) VALUES ('Ingles, 'null[*]')"; SQL statement:
+REPLACE INTO Alumnos (first, lengua) VALUES ('Ingles, 'null') [42000-192]
+2016-11-10 11:34:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'null[*]')"
+Syntax error in SQL statement "REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'null[*]')"; SQL statement:
+REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'null') [42000-192]
