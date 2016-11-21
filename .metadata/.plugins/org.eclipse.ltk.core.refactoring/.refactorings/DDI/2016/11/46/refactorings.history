@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;user&apos; in &apos;es.salesianos.edu.DDI.Servicios.BorrarTabla(...)&apos; to &apos;pais&apos;&#x0D;&#x0A;- Original project: &apos;DDI&apos;&#x0D;&#x0A;- Original element: &apos;es.salesianos.edu.DDI.Servicios.BorrarTabla(String).user&apos;&#x0D;&#x0A;- Renamed element: &apos;user&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;user&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/main\/java&lt;es.salesianos.edu.DDI{Servicios.java[Servicios~BorrarTabla~QString;@user!886!896!893!896!QString;!0!true" name="pais" references="true" stamp="1479396707259" version="1.0"/>
+</session>

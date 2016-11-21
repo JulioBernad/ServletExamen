@@ -27,7 +27,7 @@ public class Servicios {
     	
     }
     
-    public static void BorrarTabla(String user){
+    public static void BorrarTabla(String pais){
     	Connection conn = null;
         Statement stmt = null;
 
@@ -44,7 +44,7 @@ public class Servicios {
             System.out.println("Creating table in given database...");
             stmt = conn.createStatement();
 
-            String sql = "DELETE FROM Alumnos WHERE first = '" + user + "'";
+            String sql = "DELETE FROM DatosPais WHERE first = '" + pais + "'";
                    ;
 
             stmt.executeUpdate(sql);
@@ -150,7 +150,7 @@ public class Servicios {
             System.out.println("Creating table in given database...");
             stmt = conn.createStatement();
 
-            String sql = "REPLACE INTO Alumnos (first, lengua) VALUES ('" + pais + ", '" + lenguaEs + "')";
+            String sql = "REPLACE INTO DatosPais (first, lengua) VALUES ('" + pais + ", '" + lenguaEs + "')";
                    
             stmt.executeUpdate(sql);
         } catch (SQLException se) {

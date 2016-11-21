@@ -50,3 +50,47 @@ REPLACE INTO Alumnos (first, lengua) VALUES ('Ingles, 'null') [42000-192]
 org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'null[*]')"
 Syntax error in SQL statement "REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'null[*]')"; SQL statement:
 REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'null') [42000-192]
+2016-11-10 11:40:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'null[*]')"
+Syntax error in SQL statement "REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'null[*]')"; SQL statement:
+REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'null') [42000-192]
+2016-11-10 11:42:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'Italiano[*]')"
+Syntax error in SQL statement "REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'Italiano[*]')"; SQL statement:
+REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'Italiano') [42000-192]
+2016-11-10 11:43:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "REPLACE INTO Alumnos (first, lengua) VALUES ('Portugal, 'Potugues[*]')"
+Syntax error in SQL statement "REPLACE INTO Alumnos (first, lengua) VALUES ('Portugal, 'Potugues[*]')"; SQL statement:
+REPLACE INTO Alumnos (first, lengua) VALUES ('Portugal, 'Potugues') [42000-192]
+2016-11-10 11:44:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'Italiano[*]')"
+Syntax error in SQL statement "REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'Italiano[*]')"; SQL statement:
+REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'Italiano') [42000-192]
+2016-11-10 11:53:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "REPLACE INTO Alumnos (first, lengua) VALUES ('Italiano, 'Italiano[*]')"
+Syntax error in SQL statement "REPLACE INTO Alumnos (first, lengua) VALUES ('Italiano, 'Italiano[*]')"; SQL statement:
+REPLACE INTO Alumnos (first, lengua) VALUES ('Italiano, 'Italiano') [42000-192]
+2016-11-17 16:24:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'Italiano[*]')"
+Syntax error in SQL statement "REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'Italiano[*]')"; SQL statement:
+REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'Italiano') [42000-192]
+2016-11-17 16:33:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'Italiano[*]')"
+Syntax error in SQL statement "REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'Italiano[*]')"; SQL statement:
+REPLACE INTO Alumnos (first, lengua) VALUES ('Italia, 'Italiano') [42000-192]
+2016-11-17 16:35:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "REPLACE INTO DatosPais (first, lengua) VALUES ('Italia, 'italiano[*]')"
+Syntax error in SQL statement "REPLACE INTO DatosPais (first, lengua) VALUES ('Italia, 'italiano[*]')"; SQL statement:
+REPLACE INTO DatosPais (first, lengua) VALUES ('Italia, 'italiano') [42000-192]
+2016-11-17 16:43:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "REPLACE INTO DatosPais (first, lengua) VALUES ('Italia, 'Italiano[*]')"
+Syntax error in SQL statement "REPLACE INTO DatosPais (first, lengua) VALUES ('Italia, 'Italiano[*]')"; SQL statement:
+REPLACE INTO DatosPais (first, lengua) VALUES ('Italia, 'Italiano') [42000-192]
+2016-11-17 16:44:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "REPLACE INTO DatosPais (first, lengua) VALUES ('Italia, 'Italiano[*]')"
+Syntax error in SQL statement "REPLACE INTO DatosPais (first, lengua) VALUES ('Italia, 'Italiano[*]')"; SQL statement:
+REPLACE INTO DatosPais (first, lengua) VALUES ('Italia, 'Italiano') [42000-192]
+2016-11-17 16:46:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "REPLACE INTO DatosPais (first, lengua) VALUES ('Italia, 'Italiano[*]')"
+Syntax error in SQL statement "REPLACE INTO DatosPais (first, lengua) VALUES ('Italia, 'Italiano[*]')"; SQL statement:
+REPLACE INTO DatosPais (first, lengua) VALUES ('Italia, 'Italiano') [42000-192]

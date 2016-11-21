@@ -12,10 +12,10 @@ public class ServletIni extends HttpServlet {
 		@Override
 		protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 			String pais = req.getParameter("pa");
-			String lenguaEscrita = req.getParameter("lengua2");
+			String lenguaEscrita = req.getParameter("lengua");
 			
-			req.setAttribute("nam",pais);
-			req.setAttribute("lengua2",lenguaEscrita);
+			req.setAttribute("pa",pais);
+			req.setAttribute("lengua",lenguaEscrita);
 			
 			Servicios.crearTabla();
 			Servicios.insertarTabla(pais, lenguaEscrita);

@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>El pais introducido es: ${nam}</h1>
-	<h1> La lengua hablada es ${lengua2}</h1>
+	<h1>El pais introducido es: ${pa}</h1>
+	<h1> La lengua hablada es ${lengua}</h1>
 	<br>
 	<input type="button" onclick="window.location.href='Inicio.jsp'"  value="Volver">
 	<br>

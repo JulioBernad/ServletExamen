@@ -17,23 +17,14 @@
 			<td><input type="text" id="pa" name="pa" size="30"></td>
 		</tr>
 		<tr>
-			<td><p>Lengua en la base de datos</p></td>
-			<td>
-				<select name="lengua1" class="cuadro" id="lengua1" onChange="Cambia(this)">
-					<option selected="selected">Seleccione una Opcion...</option>
-						
-				</select> 
-			</td>
-		</tr>
-		<tr>
 			<td><p>Lengua a introducir por el usuario</p></td>
-			<td><input type="text" id="lengua2" name="lengua2" size="30"></td>
+			<td><input type="text" id="lengua" name="lengua" size="30"></td>
 		</tr>
 		<tr>
 			<td colspan="2" align="right"><input type="submit" value="Enviar"></td>
 		</tr>
 		<tr>
-			<td colspan="2" align="left"><input type="button" onclick="window.location.href='mostrar.jsp'"  value="Mostrar Usuarios"></td>
+			<td colspan="2" align="left"><input type="button" onclick="window.location.href='mostrar.jsp'"  value="Mostrar Datos"></td>
 		</tr>
 	</table>
 </form>
