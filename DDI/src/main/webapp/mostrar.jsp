@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<form method="post" action="Servlet3">	
+		<form method="post" action="Servlet3">	
 		<input type="submit"  value="Mostrar">
 		<input type="button" onclick="window.location.href='Inicio.jsp'"  value="Volver">
 </form>	

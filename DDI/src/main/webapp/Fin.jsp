@@ -13,7 +13,7 @@
 	<input type="button" onclick="window.location.href='Inicio.jsp'"  value="Volver">
 	<br>
 	<form method="post" action="Hola">
-		<input type="hidden" value="${nam}" name="pais">
+		<input type="hidden" value="${pa}" name="pais">
 		<br>
 		<input type="submit"  value="Borrar">
 	</form>	

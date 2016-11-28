@@ -45,7 +45,6 @@ public class Servicios {
             stmt = conn.createStatement();
 
             String sql = "DELETE FROM DatosPais WHERE first = '" + pais + "'";
-                   ;
 
             stmt.executeUpdate(sql);
 
@@ -150,7 +149,7 @@ public class Servicios {
             System.out.println("Creating table in given database...");
             stmt = conn.createStatement();
 
-            String sql = "REPLACE INTO DatosPais (first, lengua) VALUES ('" + pais + ", '" + lenguaEs + "')";
+            String sql = "INSERT INTO DatosPais (first, lengua) VALUES ('" + pais + "', '" + lenguaEs + "')";
                    
             stmt.executeUpdate(sql);
         } catch (SQLException se) {
