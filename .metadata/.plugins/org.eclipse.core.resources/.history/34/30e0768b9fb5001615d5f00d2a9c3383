@@ -30,7 +30,7 @@
 		<tbody>
 			<c:forEach var="user1" items="${listAllUsers}">
 				<tr>
-					<td><c:out value="${user1.nombre}"/> </td>
+					<td><c:out value="${user1.pa}"/> </td>
 					<td><c:out value="${user1.lengua}"/> </td>
 					<td><a name="user" href="Hola?user=${user1.nombre}">Borrar</a></td>
 		    	</tr>
