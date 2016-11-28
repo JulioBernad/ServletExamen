@@ -82,7 +82,6 @@ public class Servicios {
     public static List listar(){
     	Connection conn = null;
     	List<Paises> listUsers= new ArrayList<Paises>();
-    	List<Lenguas> listLenguas= new ArrayList<Lenguas>();
 		ResultSet resultSet = null;
 		PreparedStatement prepareStatement = null;
 		Statement stmt = null;
@@ -100,24 +99,14 @@ public class Servicios {
             System.out.println("Creating table in given database...");
              stmt = conn.createStatement();
     		
-    			prepareStatement = conn.prepareStatement("SELECT * FROM Paises");
+    			prepareStatement = conn.prepareStatement("SELECT * FROM DatosPais");
     			resultSet = prepareStatement.executeQuery();
     			while(resultSet.next()){
     				Paises userInDatabase = new Paises();
     				userInDatabase.setNombre(resultSet.getString(1));
+    				userInDatabase.setLengua(resultSet.getString(2));
     				
     				listUsers.add(userInDatabase);
-    			}
-    			resultSet.close();
-    			prepareStatement.close();
-    			
-    			prepareStatement = conn.prepareStatement("SELECT * FROM Lenguas");
-    			resultSet = prepareStatement.executeQuery();
-    			while(resultSet.next()){
-    				Lenguas userInDatabase1 = new Lenguas();
-    				userInDatabase1.setLengua(resultSet.getString(1));
-    				
-    				listLenguas.add(userInDatabase1);
     			}
 
         } catch (SQLException se) {
@@ -160,8 +149,8 @@ public class Servicios {
             System.out.println("Creating table in given database...");
             stmt = conn.createStatement();
 
-            String sql = "INSERT INTO Paises (first) VALUES ('" + pais + "')";
-            String sql1 = "INSERT INTO Lenguas (lengua) VALUES ('" + lenguaEs + "')";
+            String sql = "INSERT INTO Paises (first, lengua) VALUES ('" + pais + "')";
+            String sql1 = "INSERT INTO Lenguas (first, lengua) VALUES ('" + lenguaEs + "')";
             
             stmt.executeUpdate(sql);
             stmt.executeUpdate(sql1);
@@ -195,14 +184,12 @@ public class Servicios {
            System.out.println("Creating table in given database...");
            stmt = conn.createStatement();
 
-           String sql = "CREATE TABLE IF NOT EXISTS Paises " +
+           String sql = "CREATE TABLE IF NOT EXISTS Pais " +
                    " (first VARCHAR(255),PRIMARY KEY (first))";
-           String sql1 = "CREATE TABLE IF NOT EXISTS Lenguas " +
-                   " (lengua VARCHAR(255), PRIMARY KEY (lengua))";
-           
+           String sql1 = "CREATE TABLE IF NOT EXISTS Lengua " +
+                   " (lengua VARCHAR(255), PRIMARY KEY (first))";
 
            stmt.executeUpdate(sql);
-           stmt.executeUpdate(sql1);
            System.out.println("Created table in given database...");
        } catch (SQLException se) {
            //Handle errors for JDBC

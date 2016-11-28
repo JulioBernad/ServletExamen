@@ -109,7 +109,6 @@ public class Servicios {
     				listUsers.add(userInDatabase);
     			}
     			resultSet.close();
-    			prepareStatement.close();
     			
     			prepareStatement = conn.prepareStatement("SELECT * FROM Lenguas");
     			resultSet = prepareStatement.executeQuery();

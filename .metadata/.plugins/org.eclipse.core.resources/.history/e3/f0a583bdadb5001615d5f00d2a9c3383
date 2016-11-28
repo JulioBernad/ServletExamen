@@ -82,7 +82,6 @@ public class Servicios {
     public static List listar(){
     	Connection conn = null;
     	List<Paises> listUsers= new ArrayList<Paises>();
-    	List<Lenguas> listLenguas= new ArrayList<Lenguas>();
 		ResultSet resultSet = null;
 		PreparedStatement prepareStatement = null;
 		Statement stmt = null;
@@ -109,15 +108,14 @@ public class Servicios {
     				listUsers.add(userInDatabase);
     			}
     			resultSet.close();
-    			prepareStatement.close();
     			
     			prepareStatement = conn.prepareStatement("SELECT * FROM Lenguas");
     			resultSet = prepareStatement.executeQuery();
     			while(resultSet.next()){
-    				Lenguas userInDatabase1 = new Lenguas();
-    				userInDatabase1.setLengua(resultSet.getString(1));
+    				Lenguas userInDatabase = new Lenguas();
+    				userInDatabase.setLengua(resultSet.getString(1));
     				
-    				listLenguas.add(userInDatabase1);
+    				listUsers.add(userInDatabase);
     			}
 
         } catch (SQLException se) {
