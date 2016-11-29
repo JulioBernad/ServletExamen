@@ -12,12 +12,13 @@ public class Servlet2 extends HttpServlet {
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		String pais = req.getParameter("pa");
+		String lengua = req.getParameter("lengua");
 		//System.out.println(user);
-		req.setAttribute("pa",pais);
+		
+		req.setAttribute("lengua",lengua);
 		
 		
-		Servicios.BorrarTabla(pais);
+		Servicios.BorrarTabla(lengua);
 		
 		redirect(resp);
 		super.doPost(req, resp);
@@ -25,12 +26,12 @@ public class Servlet2 extends HttpServlet {
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		String pais = req.getParameter("pa");
+		String lengua = req.getParameter("lengua");
 		//System.out.println(user);
-		req.setAttribute("pa",pais);
+		req.setAttribute("lengua",lengua);
 		
 		//JavaConexion.crearTabla();
-		Servicios.BorrarTabla(pais);
+		Servicios.BorrarTabla(lengua);
 		
 		redirect(resp);
 		super.doPost(req, resp);
