@@ -134,7 +134,7 @@ public class Servicios {
 		}
 	}
     
-   public static void insertarTabla(String pais, String lenguaEs){
+   public static void insertarLengua(String lenguaEs){
     	Connection conn = null;
         Statement stmt = null;
 
@@ -151,10 +151,8 @@ public class Servicios {
             System.out.println("Creating table in given database...");
             stmt = conn.createStatement();
 
-            String sql = "INSERT INTO Paises (first, lengua) VALUES ('" + pais + "','"+ lenguaEs +"')";
             String sql1 = "INSERT INTO Lenguas (lengua) VALUES ('" + lenguaEs + "')";
             
-            stmt.executeUpdate(sql);
             stmt.executeUpdate(sql1);
         } catch (SQLException se) {
             //Handle errors for JDBC
@@ -168,6 +166,41 @@ public class Servicios {
         } // end try
        
     }
+   
+   public static void insertarPais(String pais, String lenguaEs){
+   	Connection conn = null;
+       Statement stmt = null;
+
+       try {
+           //STEP 2: Register JDBC driver
+           Class.forName("org.h2.Driver");
+
+           //STEP 3: Open a connection
+           System.out.println("Connecting to a selected database...");
+           conn = DriverManager.getConnection(DB_URL, USER, PASS);
+           System.out.println("Connected database successfully...");
+
+           //STEP 4: Execute a query
+           System.out.println("Creating table in given database...");
+           stmt = conn.createStatement();
+
+           String sql = "INSERT INTO Paises (first, lengua) VALUES ('" + pais + "','"+ lenguaEs +"')";
+           String sql1 = "INSERT INTO Lenguas (lengua) VALUES ('" + lenguaEs + "')";
+           
+           stmt.executeUpdate(sql);
+           stmt.executeUpdate(sql1);
+       } catch (SQLException se) {
+           //Handle errors for JDBC
+           se.printStackTrace();
+       } catch (Exception e) {
+           //Handle errors for Class.forName
+           e.printStackTrace();
+       } finally {
+           closeStm(conn, stmt);
+           closeCon(conn);
+       } // end try
+      
+   }
    
    public static void crearTabla(){
    	Connection conn = null;
@@ -207,4 +240,46 @@ public class Servicios {
            closeCon(conn);
        } // end try
    }
+   public static List listarLenguas(){
+   	Connection conn = null;
+   	List<Lenguas> listUsers= new ArrayList<Lenguas>();
+		ResultSet resultSet = null;
+		PreparedStatement prepareStatement = null;
+		Statement stmt = null;
+
+       try {
+           //STEP 2: Register JDBC driver
+           Class.forName("org.h2.Driver");
+
+           //STEP 3: Open a connection
+           System.out.println("Connecting to a selected database...");
+           conn = DriverManager.getConnection(DB_URL, USER, PASS);
+           System.out.println("Connected database successfully...");
+
+           //STEP 4: Execute a query
+           System.out.println("Creating table in given database...");
+            stmt = conn.createStatement();
+   		
+   			prepareStatement = conn.prepareStatement("SELECT * FROM Lenguas");
+   			resultSet = prepareStatement.executeQuery();
+   			while(resultSet.next()){
+   				Lenguas userInDatabase = new Lenguas();
+   				userInDatabase.setLengua(resultSet.getString(1));
+   				
+   				listUsers.add(userInDatabase);
+   			}
+
+       } catch (SQLException se) {
+           //Handle errors for JDBC
+           se.printStackTrace();
+       } catch (Exception e) {
+           //Handle errors for Class.forName
+           e.printStackTrace();
+       } finally {
+           closeStm(conn, stmt);
+           closeCon(conn);
+           closeRs(resultSet);
+       } // end try
+       return listUsers;
+  }
 }

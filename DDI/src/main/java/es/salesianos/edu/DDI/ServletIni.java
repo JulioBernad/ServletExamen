@@ -13,18 +13,29 @@ public class ServletIni extends HttpServlet {
 		protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 			String pais = req.getParameter("pa");
 			String lenguaEscrita = req.getParameter("lengua");
+			String lenguaCom = req.getParameter("cLengua");
 			
 			req.setAttribute("pa",pais);
 			req.setAttribute("lengua",lenguaEscrita);
+			req.setAttribute("cLengua",lenguaCom);
 			
 			Servicios.crearTabla();
-			Servicios.insertarTabla(pais, lenguaEscrita);
+			
+			if(lenguaEscrita == ""){
+				Servicios.insertarPais(pais, lenguaCom);
+			}
+			else{
+				Servicios.insertarPais(pais, lenguaEscrita);
+				Servicios.insertarLengua(lenguaEscrita);
+			}
+			
 
-			req.getRequestDispatcher("Fin.jsp").forward(req, resp);
+
+			req.getRequestDispatcher("Inicio.jsp").forward(req, resp);
 			super.doPost(req, resp);
 		}
 
 		private void redirect(HttpServletResponse resp) throws IOException {
-			resp.sendRedirect("Fin.jsp");
+			resp.sendRedirect("Inicio.jsp");
 		}
 }

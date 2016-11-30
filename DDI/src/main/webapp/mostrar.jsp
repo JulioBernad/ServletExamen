@@ -32,7 +32,7 @@
 				<tr>
 					<td><c:out value="${user1.nombre}"/> </td>
 					<td><c:out value="${user1.lengua}"/> </td>
-					<td><a name="user" href="Hola?user=${user1.nombre}">Borrar</a></td>
+					<td><a name="lengua" href="Hola?lengua=${user1.lengua}">Borrar</a></td>
 		    	</tr>
 			</c:forEach>
 		</tbody>
