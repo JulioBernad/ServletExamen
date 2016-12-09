@@ -1,0 +1,12 @@
+package Model;
+
+public class Languages {
+	private String lengua;
+	
+	public String getLengua() {
+		return lengua;
+	}
+	public void setLengua(String lengua) {
+		this.lengua = lengua;
+	}
+}

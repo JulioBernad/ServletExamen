@@ -1,0 +1,20 @@
+package Model;
+
+public class Country {
+	private String name;
+	private String language;
+	
+	public String getLengua() {
+		return language;
+	}
+	public void setLengua(String lengua) {
+		this.language = lengua;
+	}
+	
+	public String getNombre() {
+		return name;
+	}
+	public void setNombre(String name) {
+		this.name = name;
+	}
+}
