@@ -6,3 +6,9 @@
 1481269428971	Move compilation units
 1481269437207	Delete element
 1481269768359	Rename type 'Servicios'
+1481270509488	Delete elements
+1481270594507	Rename resource 'Inicio.jsp'
+1481270607084	Rename resource 'mostrar.jsp'
+1481270864333	Rename compilation unit 'InfoDataSet.java'
+1481270899676	Rename compilation unit 'InfoDataSetServlet.java'
+1481270984699	Rename resource 'Start.jsp'
